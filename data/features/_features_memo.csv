@@ -1,1 +1,24 @@
 特徴量,メモ
+accum_minutes,積算分
+accum_minutes_half_day,積算分(半日)
+add_x_y,xとyの加算
+agg_by_am,"[['date', 'am']]で集約"
+agg_shift_by_date,"[['date'], ['date', 'pm'], ['date', 'direction', 'x', 'y']]で集約&差分"
+all_raw_data,全初期データ
+congestion,種名。今回の目的変数。
+coordinate,座標
+data_obj,日付
+decompose_direction,方角をx軸とy軸に分解
+diff_days,1日差分
+direction,方角
+id,ID
+is_weekend,週末
+rolling,移動平均
+rolling_10days,移動平均
+rolling_30days,移動平均
+shift_3days,3日shift
+shift_day,1日shift
+shift_days,3日差分
+target_encoding,"['direction', 'hour', 'x', 'y']でtarget_encoding"
+time,年、月、週、日、時間、分、秒
+x_y_direction,x_y_direction

@@ -11,19 +11,11 @@ CONFIG_FILE = '../configs/config.yaml'
 with open(CONFIG_FILE) as file:
     yml = yaml.safe_load(file)
 RAW_DIR_NAME = yml['SETTING']['RAW_DIR_NAME']
-SUB_DIR_NAME = yml['SETTING']['SUB_DIR_NAME']
+FEATURE_DIR_NAME = yml['SETTING']['FEATURE_DIR_NAME']
+EDA_DIR_NAME = yml['SETTING']['EDA_DIR_NAME']
 
-# tensorflowとloggingのcollisionに対応
-try:
-    import absl.logging
-    # https://github.com/abseil/abseil-py/issues/99
-    logging.root.removeHandler(absl.logging._absl_handler)
-    # https://github.com/abseil/abseil-py/issues/102
-    absl.logging._warn_preinit_stderr = False
-except Exception:
-    pass
 
-class Util:
+class ExploratoryDataAnalysis:
 
     @classmethod
     def dump(cls, value, path):

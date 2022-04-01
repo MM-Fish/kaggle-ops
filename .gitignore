@@ -6,8 +6,9 @@ kaggle.json
 gcs-key.json
 git_token
 
+edas/
 data/external
-data/features/*.pkl
-data/raw/*.csv
+data/features/
+data/raw/
 data/submission/*.csv
 models/

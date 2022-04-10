@@ -1,14 +1,15 @@
 .tmp.drivedownload
 .tmp.driveupload
+.mypy_cache
 .DS_Store
 __pycache__
 kaggle.json
 gcs-key.json
 git_token
 
-edas/
-data/external
-data/features/
-data/raw/
-data/submission/*.csv
-models/
+/data/external
+/data/raw/
+/data/submission/*.csv
+/data/features/*
+/models
+/edas
